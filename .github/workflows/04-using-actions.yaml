@@ -7,7 +7,7 @@ jobs:
         runs-on: ubuntu-latest
         defaults:
             run:
-                working-directory: 04-using-actions/react-app
+                working-directory: ./04-using-actions/react-app
         steps:
             - name: Checkout Code
               uses: actions/checkout@v4
@@ -15,7 +15,7 @@ jobs:
             - name: Printing Folders
               run: |
                 echo ' The files / folders in the current directory are:'  
-                ls -la
+                pwd
 
             - name: Setup Node
               uses: actions/setup-node@v4

@@ -15,7 +15,7 @@ jobs:
             - name: Printing Folders
               run: |
                 echo ' The files / folders in the current directory are:'  
-                pwd
+                ls
 
             - name: Setup Node
               uses: actions/setup-node@v4
